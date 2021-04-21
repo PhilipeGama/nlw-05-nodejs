@@ -46,3 +46,5 @@ beekeeper studio
 ferramenta de visualização de banco de dados
 
 https://time.is/
+
+codigo 2: embuscadoproximonivel
