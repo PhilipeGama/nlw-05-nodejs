@@ -48,3 +48,7 @@ ferramenta de visualização de banco de dados
 https://time.is/
 
 codigo 2: embuscadoproximonivel
+
+yarn typeorm migration:create -n CreateUsers
+
+codigo 3: astronautas
