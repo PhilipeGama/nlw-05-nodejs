@@ -52,3 +52,24 @@ codigo 2: embuscadoproximonivel
 yarn typeorm migration:create -n CreateUsers
 
 codigo 3: astronautas
+
+sites para pesquisa: 
+https://whimsical.com/
+https://www.notion.so/
+
+instalar as dependecias do socket.io
+yarn  add socket.io
+
+instalar as tipagens do socket.io
+yarn add @types/socket.io - D
+
+como usar o socket.io
+https://www.npmjs.com/package/socket.io
+
+instalar ejs
+sudo yarn add ejs
+
+instalar socket.io-cliente para utiliza no html
+sudo yarn add socket.io-client
+codigo 4:
+
