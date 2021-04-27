@@ -20,7 +20,6 @@ sudo yarn add ts-node-dev -D
     "dev" : "ts-node-dev src/server.ts"
   }
 
-codigo 1: missãoespacial
 
 
 (Node.js e Banco de Dados: ORM, Query Builder, driver nativo)
@@ -47,11 +46,10 @@ ferramenta de visualização de banco de dados
 
 https://time.is/
 
-codigo 2: embuscadoproximonivel
 
 yarn typeorm migration:create -n CreateUsers
 
-codigo 3: astronautas
+<<<<<<< HEAD
 
 sites para pesquisa: 
 https://whimsical.com/
@@ -70,6 +68,15 @@ instalar ejs
 sudo yarn add ejs
 
 instalar socket.io-cliente para utiliza no html
-sudo yarn add socket.io-client
-codigo 4:
 
+sudo yarn add socket.io-client
+codigo 
+
+codigos: 
+1 - missãoespacial
+2 - embuscadoproximonivel
+3 - astronautas
+4 - universoinfinito
+
+tecnologia para passa os dados para o html
+mustache
