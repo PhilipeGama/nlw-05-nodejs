@@ -1,3 +1,4 @@
+
 document.querySelector("#start_chat").addEventListener("click", (event) => {
   //console.log("click no botão");
   const socket = io();
@@ -47,10 +48,13 @@ document.querySelector("#start_chat").addEventListener("click", (event) => {
         const rendered = Mustache.render(template_admin,{
           message_admin: message.text,
         });
-        document.getElementById("message").innerHTML += rendered;
+        document.getElementById("messages").innerHTML += rendered;
       }
-    })
-  })
+    });
+  });
+  socket.on("admin_send_to_client",message =>{
+    console.log(message);
+  });
 });
 
 

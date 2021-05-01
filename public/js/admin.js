@@ -1,3 +1,5 @@
+//const { Socket } = require("socket.io-client");
+
 const socket = io();
 let connectionUsers = []
 socket.on("admin_list_all_users", (connections) =>{
@@ -28,6 +30,57 @@ function call(id) {
     email: connection.user.email,
     id: connection.user_id
   });
-  document.getElementById("suporte").innerHTML += rendered;
+  document.getElementById("supports").innerHTML += rendered;
 
+  const parms = {
+    user_id: connection.user_id
+  }
+  socket.emit("admin_list_message_by_user", parms, (messages) =>{
+    console.log("Messages",messages);
+    const divMessages = document.getElementById(`allMessages${connection.user_id}`);
+
+    messages.forEach(message => {
+      const createDiv = document.createElement("div");
+
+      if(message.admin_id === null){
+        createDiv.className = "admin_message_client";
+
+        createDiv.innerHTML = `<span>${connection.user.email}</span>`;
+        createDiv.innerHTML +=`<span>${message.text}</span>`;
+
+
+        createDiv.innerHTML += `<span class="admin_date">${dayjs(
+          message.create_at).format("DD/MM/YYYY HH:mm:ss")}</span>`
+      }else{
+        createDiv.className = "admin_message_admin";
+
+        createDiv.innerHTML = `Atendente: <span>${message.text}</span>`
+        createDiv.innerHTML += `<span class="admin_date">${dayjs(message.create_at).format("DD/MM/YYYY HH:mm:ss")}</span>`
+      }
+      divMessages.appendChild(createDiv);
+    });
+  });
+
+}
+
+function sendMessage(id){
+  const text = document.getElementById(`send_message_${id}`);
+  const params = {
+    text: text.value,
+    user_id: id
+  }
+  
+  socket.emit("admin_send_message", params);
+
+  const divMessages = document.getElementById(`allMessages${id}`);
+  const createDiv = document.createElement("div");
+
+  createDiv.className = "admin_message_admin";
+
+  createDiv.innerHTML = `Atendente: <span>${params.text}</span>`
+  createDiv.innerHTML += `<span class="admin_date">${dayjs().format("DD/MM/YYYY HH:mm:ss")}</span>`
+
+  divMessages.appendChild(createDiv);
+
+  text.value = "";
 }
