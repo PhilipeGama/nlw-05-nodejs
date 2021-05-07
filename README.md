@@ -26,9 +26,9 @@ sudo yarn add ts-node-dev -D
 
 ```
 
-```
-[Node.js e Banco de Dados: ORM, Query Builder, driver nativo)](https://www.webdevdrops.com/nodejs-banco-de-dados-orm-query-builder-driver-nativo/)
-```
+
+[Node.js e Banco de Dados: ORM, Query Builder, driver nativo](https://www.webdevdrops.com/nodejs-banco-de-dados-orm-query-builder-driver-nativo/)
+
 
 configuração do typeorm
 ```
@@ -37,7 +37,7 @@ https://typeorm.io/#/
 
 migration
 ```
-(link de bom artigo)
+https://juniorb2s.medium.com/migrations-o-porque-e-como-usar-12d98c6d9269
 ```
 
 cria migration
