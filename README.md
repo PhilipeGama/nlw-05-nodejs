@@ -26,10 +26,8 @@ sudo yarn add ts-node-dev -D
 
 ```
 
-
-(Node.js e Banco de Dados: ORM, Query Builder, driver nativo)
 ```
-Fonte(https://www.webdevdrops.com/nodejs-banco-de-dados-orm-query-builder-driver-nativo/)
+[Node.js e Banco de Dados: ORM, Query Builder, driver nativo)](https://www.webdevdrops.com/nodejs-banco-de-dados-orm-query-builder-driver-nativo/)
 ```
 
 configuração do typeorm
@@ -69,11 +67,11 @@ ferramenta de sgbd de banco de dados
 ```
 
 
-https://time.is/
 
 
-sites para pesquisa: 
+conteúdo extras: 
 ```
+https://time.is/
 https://whimsical.com/
 https://www.notion.so/
 ```
