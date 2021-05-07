@@ -37,7 +37,7 @@ https://typeorm.io/#/
 
 migration
 ```
-(link de bom artigo)
+https://juniorb2s.medium.com/migrations-o-porque-e-como-usar-12d98c6d9269
 ```
 
 cria migration
