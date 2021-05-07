@@ -26,9 +26,9 @@ sudo yarn add ts-node-dev -D
 
 ```
 
-```
-[Node.js e Banco de Dados: ORM, Query Builder, driver nativo)](https://www.webdevdrops.com/nodejs-banco-de-dados-orm-query-builder-driver-nativo/)
-```
+
+[Node.js e Banco de Dados: ORM, Query Builder, driver nativo](https://www.webdevdrops.com/nodejs-banco-de-dados-orm-query-builder-driver-nativo/)
+
 
 configuração do typeorm
 ```
